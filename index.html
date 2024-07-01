@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="names">
+      <div class="firstname">
+        <label for="firstname">First Name *</label>
+        <input type="text" name="firstname" id="first-name" >
+        <p class="error">This field is required</p>
+      </div>
+      <div class="firstname">
+        <label for="lastname">Last Name *</label>
+        <input type="text" name="lastname" id="last-name" >
+        <p class="error">This field is required</p>
+      </div>
+    </div>
+    <div class="email">
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email">
+      <p id="error-e">This field is required</p>
+      <p id="invalid-email-e">Please enter a valid email address</p>
+    </div>
+
+    <div class="query">
+      <label for="querys">Query Type *</label>
+      <div class="radios">
+        <div class="radio-1">
+          <input type="radio" name="" id="radio-1"> 
+          <input type="radio" name="" id="radio-2"> 
+        </div>
+        <p class="query-error">error</p>
+      </div>
+     
+    </div>
+    <div class="message">
+      <label for="message">Message *</label>
+      <textarea name="message-area" id="message-area"></textarea>
+      <p id="text-error">error</p>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="" id="check">
+      <p>I consent</p>
+      
+    </div>
+    <p id="check-e">error</p>
+    <button id="submit">Submit</button>
+  </div>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>

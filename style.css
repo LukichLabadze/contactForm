@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  position: absolute;
+}
+
+.header{
+  margin-bottom: 1rem;
+}
+
+.header h2{
+  color: hsl(187, 24%, 22%);
+  font-size: 2rem;
+}
+
+.names{
+  
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.firstname{
+  /*background-color: green; */
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 1rem;
+  
+}
+
+.firstname label{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#first-name{
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#last-name{
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.error{
+  color: hsl(0, 66%, 54%);
+  border-color: red;
+  display: none;
+}
+
+.email label{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.email{
+  
+}
+
+#email{
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#error-e{
+  color: red;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+#invalid-email-e{
+  display: none;
+}
+
+.query label{
+  margin-top: 2rem;
+}
+
+.radios{
+  
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.radio-1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+#radio-1, #radio-2{
+  width: 4rem;
+  height: 4rem;
+}
+
+.query-error{
+  display: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid  hsl(169, 82%, 27%);
+}
+
+.message{
+  
+  margin-bottom: 1rem;
+}
+
+button{
+  width: 100%;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  transition: 0.4s;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.message label{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#message-area{
+  width: 100%;
+  height: 8rem;
+}
+
+#text-error{
+  color: red;
+  display: none;
+}
+
+.checkbox p{
+  display: inline-block;
+}
+
+#check{
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#check-e{
+  color: red;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .firstname{
+    
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
